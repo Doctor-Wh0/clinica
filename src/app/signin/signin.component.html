@@ -1,0 +1,49 @@
+<main>
+<div class="container">
+      <div class="row">
+
+          <div class="col s6 offset-s3 z-depth-1" id="panell">
+            <h5 id="title">Форма регистрации</h5>
+            <form #regForm="ngForm" novalidate>
+
+            <div class="input-field form-group" id="username">
+              <input  type="text" class="validate form-control" name="username" [(ngModel)]="username" required>
+              <label for="username">ФИО</label>
+          </div>
+          <div class="input-field form-group" id="email">
+            <input  type="email" class="validate form-control" name="email" [(ngModel)]="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div class="input-field form-group" id="phone">
+            <input  type="text" class="validate form-control" name="phone" [(ngModel)]="phone" required>
+            <label for="phone">Телефон</label>
+        </div>
+        <div class="input-field form-group">
+            <select name="role" [(ngModel)]="role" required>
+                <option *ngFor="let role of roles" name="role" [value]="role.value">  
+                {{role.display}}
+                </option>
+            </select>
+            <label>Роль</label>
+        </div>
+        <div class="input-field form-group" id="password">
+            <input  type="password" class="validate form-control" name="password" [(ngModel)]="password" required>
+            <label for="password">Пароль</label>
+        </div>
+        <div class="input-field form-group" id="confirm-password">
+            <input  type="password" class="validate form-control" name="confirmpassword" [(ngModel)]="confirmpassword" required>
+            <label for="confirm-password">Подтвердите пароль</label>
+        </div>
+        <p>
+            <input type="checkbox" id="remember" name="remember" [(ngModel)]="remember"/>
+            <label for="remember" id="checkbox" >Remember me</label>
+        </p>
+        <button class="waves-effect waves-light btn" id="signinbtn" (click)="submit(regForm)">Регистрация</button>
+        
+        </form>
+
+        </div>
+      </div>
+
+    </div>
+</main>

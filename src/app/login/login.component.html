@@ -1,0 +1,29 @@
+<main>
+<div class="container">
+      <div class="row" >
+  
+          <div class="col s6 offset-s3 z-depth-1" id="panell">
+            <h5 id="title">Login Form</h5>
+            <form #myForm="ngForm" novalidate>
+
+            <div class="input-field form-group" id="username">
+              <input  type="text" class="validate form-control" name="username" [(ngModel)]="username" required>
+              <label for="username">Username</label>
+          </div>
+          <div class="input-field form-group" id="password">
+            <input  type="password" class="validate form-control" name="password" [(ngModel)]="password" required>
+            <label for="password">Password</label>
+        </div>
+        <p>
+            <input type="checkbox" id="remember" name="remember" [(ngModel)]="remember" />
+            <label for="remember" id="checkbox" >Remember me</label>
+        </p>
+        <button class="waves-effect waves-light btn" id="loginbtn"  (click)="submit(myForm)" >Login</button>
+        
+        </form>
+
+        </div>
+      </div>
+
+    </div>
+</main>

@@ -1,0 +1,98 @@
+<main>
+<div id="profile-page">
+<ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#!name"><span class="white-text name">John Doe</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+
+
+
+
+
+
+
+
+   <!-- Element Showed -->
+
+
+   
+  
+  
+ 
+  
+ 
+  <a  style="position: fixed; bottom: 50%; right: 15px" class="btn btn-floating btn-large" id="right"><i class="material-icons">call</i></a>
+  
+
+  <div class="tap-target" data-activates="right">
+    <div class="tap-target-content white-text">
+    <h5>Right</h5>
+    <p>Testando alguma coisa</p>
+    </div>
+  </div>
+
+  
+</div>
+</main>
+<style>
+.tap-target {
+  opacity: 0.96;
+  position: fixed;
+  font-size: 1rem;
+  visibility: hidden;
+  border-radius: 50%;
+  background-color: #26a69a;
+  z-index: 10000;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.14), 0 10px 50px 0 rgba(0,0,0,0.12), 0 30px 10px -20px rgba(0,0,0,0.2);
+  width: 800px;
+  height: 800px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tap-target {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.tap-target.open {
+  visibility: visible;
+}
+ 
+.tap-target-content {
+  position: relative;
+  display: table-cell;
+}
+
+.tap-target-wave {
+  z-index: 10001;    
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.tap-target-origin {
+  z-index: 10002;
+  position: absolute !important;
+}
+
+.tap-target-origin:not(.btn), .tap-target-origin:not(.btn):hover {
+  background: none;
+}
+    
+   
+</style>

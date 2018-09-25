@@ -1,0 +1,8 @@
+body{
+  position: absolute;
+  width: 100%;
+}
+app-root, router-outlet, main{
+  position: relative;
+  width: 100%;
+}
